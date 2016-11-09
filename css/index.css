@@ -1,0 +1,264 @@
+body,h1,h2,h3,ul,li,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	border: 0;
+}
+@keyframes fly{
+	from{
+		transform: translateY(0px);
+	}
+	to{
+		transform: translateY(12px);
+	}
+}
+@keyframes big{
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position: -2000px 0;
+	}
+}
+@keyframes rotate{
+	from{
+		transform: rotateY(0);
+	}
+	40%{
+		transform: rotateY(0);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+@keyframes btn{
+	from{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to{
+		transform: translateY(10px);
+		opacity: 0.5;
+	}
+}
+#top{
+	width: 100%;
+	height: 60px;
+	top: 0;
+	position: fixed;
+	z-index: 100;
+	background: #168bd8;
+}
+.section{
+	position: relative;
+}
+.section1{
+	background: url(../img/bg-0_c25cb21.jpg);
+}
+.section1 .big{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.section1 .big div{
+	width: 100%;
+	height: 1000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/cloud_1_1d4924b.png);
+	animation: big 30s linear 0s infinite;
+}
+.section1 .middle{
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+.section1 .middle div{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/cloud_2_a186193.png);
+	animation: big 80s linear 0s infinite;
+} 
+.section1 .small{
+	width: 100%;
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.section1 .small div{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/cloud_3_5ee0340.png);
+	animation: big 120s linear 0s infinite;
+} 
+.section2{
+	background: url(../img/bg-1_e29bcfa.jpg);
+}
+.section3{
+	background: url(../img/bg-2_867b7b4.jpg);
+}
+.section4{
+	background: url(../img/bg-3_153a003.jpg);
+}
+.center{
+	width: 1000px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.center .wenzi{
+	width: 501px;
+	height: 158px;
+	position: absolute;
+	top: 22%;
+	left: 0;
+	z-index: 20;
+}
+.center .ship{
+	position: absolute;
+	bottom: 12%;
+	left: 135px;
+	z-index: 30;
+	/*opacity: 0;*/
+	transform: translateX(-30px);
+	transition: all 0.5s;
+}
+.fly{
+	position: absolute;
+	top: 18%;
+	left: 300px;
+	animation: fly 1s linear 0s infinite alternate;
+}
+.bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 126px;
+}
+.bottom .btn{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	margin-left: -13px;
+	animation: btn 0.5s linear 0s infinite alternate;
+}
+.section1 .bottom{
+	background: #0d71cd url(../img/bg-1_e29bcfa.jpg);
+}
+.section3 .bottom{
+	background: url(../img/bg-3-head_b8a3f7f.png);
+}
+.section1 .bottom .hill1{
+	position: absolute;
+	top: -40%;
+	left: 100px;
+}
+.section1 .bottom .hill2{
+	position: absolute;
+	top: -12%;
+	right: 36%;
+}
+.section1 .bottom .hill3{
+	position: absolute;
+	top: -40%;
+	right: 150px;
+}
+.center .left{
+	width: 500px;
+	height: 126px;
+	position: absolute;
+	top: 36%;
+	left: -30px;
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: all 0.5s;
+}
+#active .left{
+	opacity: 1;
+	transform: translateX(0);
+}
+#active .right{
+	opacity: 1;
+	transform: translateX(0);
+}
+#active .ship{
+	opacity: 1;
+	transform: translateX(0);
+}
+.center .left .pic{
+	float: left;
+	animation: rotate 2s infinite;
+}
+.center .left .serv{
+	float: left;
+	width: 360px;
+	height: 100px;
+	margin-top: 8px;
+	margin-left: 18px;
+	color: #fff;
+}
+.center .left .serv h2{
+	font-size: 34px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 48px;
+	margin-bottom: 6px;
+}
+.center .left .serv span{
+	display: block;
+	font-size: 19px;
+	letter-spacing: 1px;
+	line-height: 32px;
+	opacity: 0.8;
+}
+.center .right{
+	position: absolute;
+	right: 0;
+	top: 24%;
+	opacity: 0;
+	transform: translateX(30px);
+	transition: all 0.5s;
+}
+.section3 .center .right{
+	top: 36%;
+}
+.section3 .center .left{
+	left:30px;
+}
+.section3 .center .left .serv{
+	width: 380px;
+}
+.section4 .center .left{
+	left:30px;
+}
+.section4 .center .left .serv{
+	width: 260px;
+}
+.section4 .center .right{
+	top: 36%;
+	right: 60px;
+	animation: ;
+}
+
+
+
+
+
+
+

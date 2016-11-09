@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+	</head>
+	<script>
+		$(function(){
+		    $('#baiduyuqing').fullpage({
+		    	'navigation':true,
+		    	navigationTooltips:['登录百度舆情','领先：数据收集与处理','全面：舆情分析逻辑与架构','专业：专业数据可视化'],
+		    	afterLoad: function(anchorLink, index){
+					$('.center').removeAttr("id")
+					$('.center').eq(index-1).attr("id","active")
+				},
+				
+		    });
+		    $(".btn").click(function(){
+		    	$.fn.fullpage.moveSectionDown()
+		    })
+		});
+	</script>
+	<body>
+		<div id="top">
+			
+		</div>
+		<div id="baiduyuqing">
+			<div class="section section1">
+				<div class="big">
+					<div></div>
+				</div>
+				<div class="middle">
+					<div></div>
+				</div>
+				<div class="small">
+					<div></div>
+				</div>
+				<div class="center">
+					<div class="wenzi">
+						<img src="img/launch_deea86c.png" alt="" />
+					</div>
+					<img src="img/flight_ade8ee2.png" alt="" class="fly" />
+					<img src="img/ship_1ad6734.png" alt="" class="ship" />
+				</div>
+				<div class="bottom">
+					<img src="img/arrow_aad9b25.png" alt="" class="btn" />
+					<img src="img/hill_1_0d79217.png" alt="" class="hill1" />
+					<img src="img/hill_2_540422f.png" alt="" class="hill2" />
+					<img src="img/hill_3_ace39fb.png" alt="" class="hill3" />
+				</div>
+			</div>
+			<div class="section section2">
+				<div class="center">
+					<div class="left">
+						<div class="pic">
+							<img src="img/h_lingxian_221f2d8.png" alt="" />
+						</div>
+						<div class="serv">
+							<h2>数据收集与处理</h2>
+							<span>15年专业数据收集与语义分析技术积累卓越极致，不断攀登</span>
+						</div>
+					</div>
+					<div class="right">
+						<img src="img/brain_36a156f.png" alt="" />
+					</div>
+				</div>
+				<div class="bottom">
+					<img src="img/arrow_aad9b25.png" alt="" class="btn" />
+				</div>
+			</div>
+			<div class="section section3">
+				<div class="center">
+					<div class="left">
+						<div class="pic">
+							<img src="img/h_quanmian_8f813d2.png" alt="" />
+						</div>
+						<div class="serv">
+							<h2>舆情分析逻辑与架构</h2>
+							<span>声量诊断、传播分析、情感提炼、受众画像有方法论，更有智慧</span>
+						</div>
+					</div>
+					<div class="right">
+						<img src="img/allside_e8abd12.png" alt="" />
+					</div>
+				</div>
+				<div class="bottom">
+					<img src="img/arrow_aad9b25.png" alt="" class="btn" />
+				</div>
+			</div>
+			<div class="section section4">
+				<div class="center">
+					<div class="left">
+						<div class="pic">
+							<img src="img/h_zhuanye_256a94d.png" alt="" />
+						</div>
+						<div class="serv">
+							<h2>专业数据可视化</h2>
+							<span>非凡的数据洞悉和可视化能力精研数据，惊艳所见</span>
+						</div>
+					</div>
+					<div class="right">
+						<img src="img/stat_8934528.png" alt="" />
+					</div>
+				</div>
+				<div class="bottom">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
